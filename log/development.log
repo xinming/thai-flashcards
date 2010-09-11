@@ -45298,3 +45298,12 @@ Rendering template within layouts/application
 Rendering vocabs/index
 Rendered vocabs/_vocab (16.4ms)
 Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing VocabsController#index (for 58.8.34.10 at 2010-09-11 14:28:43) [GET]
+  [4;36;1mVocab Load (1.9ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (29.8ms)
+Completed in 150ms (View: 140, DB: 2) | 200 OK [http://ohho.in.th/]
