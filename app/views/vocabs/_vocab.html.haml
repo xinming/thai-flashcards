@@ -1,0 +1,16 @@
+%table.data_list
+  %thead
+    %tr
+      %th Thai
+      %th English
+      %th Pronounciation
+      %th Edit
+  %tbody
+    - vocabs.each do |vocab|
+      %tr
+        %td.thai=link_to vocab.thai, vocab
+        %td=h vocab.english
+        %td= vocab.print_pronunciation
+        %td
+          = link_to edit_image, edit_vocab_path(vocab)
+          = link_to delete_image, vocab_path(vocab), :method => "DELETE", :confirm => "Delete?"

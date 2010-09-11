@@ -1,0 +1,9 @@
+%h2 Listing vocabs
+- if !@vocabs.empty?
+  .vocabs
+    = render :partial => "vocab", :locals => {:vocabs => @vocabs}
+  = will_paginate(@vocabs)
+- else
+  %p There are no vocabs to show yet.
+%ul.links
+  = link_to 'New vocab', new_vocab_path, :class=> "add_link"

@@ -1,0 +1,57 @@
+@import reset.sass
+li 
+  list-style: none !important
+body
+  font-family: sans-serif
+  font-size: 13px
+  color: #222
+  background: #CDCDCD !important
+#flash_card_container
+  width: 375px
+  height: 390px
+  margin: 40px auto
+  #flash_card
+    width: 258px
+    height: 390px
+    margin: 0 auto
+    background: url('/images/flash_card.png') no-repeat
+  #left_card a, #right_card a
+    text-indent: -100000px
+    display: block
+    height: 54px
+    width: 48px
+    font-size: 0px
+    line-height: 0px
+    margin-top: 160px
+  #left_card a
+    background: url('/images/arrows.png') no-repeat left center
+    float: left
+  #right_card a
+    background: url('/images/arrows.png') no-repeat right center
+    float: right
+    margin-right: 2px
+    
+  #left_card a:hover, #left_card a.hover
+    background: url('/images/arrows.png') no-repeat -98px 0
+  #right_card a:hover,#right_card a.hover
+    background: url('/images/arrows.png') no-repeat -48px 0
+
+
+  #thai
+    font-size: 60px
+    text-align: center
+    padding: 70px 0 
+    color: #666
+    height: 90px
+    line-height: 90px
+  #english, #pronunciation
+    padding: 0 10px
+    text-align: center
+    min-height: 26px
+    line-height: 18px
+  #english
+    font-size: 17px
+    margin-top: 74px
+  #pronunciation
+    color: #999
+    font-size: 13px

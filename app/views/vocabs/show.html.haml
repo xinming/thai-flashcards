@@ -1,0 +1,21 @@
+#flash_card_container
+  -if previous = Vocab.find_previous(@vocab.id).last
+    #left_card= link_to_remote "previous", :url=> vocab_url(previous), :method=>"get", :loading=> "$('#left_card a').addClass('hover')"
+  -else
+    #left_card
+  -if subsequent = Vocab.find_subsequent(@vocab.id).first
+    #right_card= link_to_remote "Next", :url=> vocab_url(subsequent), :method=>"get", :loading=> "$('#right_card a').addClass('hover')"
+  -else
+    #right_card
+  #flash_card
+    #thai= @vocab.thai
+    #english= @vocab.english
+    #pronunciation= "[#{@vocab.print_pronunciation}]"
+
+%script{:type => "text/javascript"}
+  :plain
+    $(document).ready(function(){
+    update_size();
+    set_shortcuts();
+    });
+    

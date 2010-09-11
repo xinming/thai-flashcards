@@ -1,0 +1,5 @@
+%h2 Editing vocab
+= render :partial => "form", :locals => {:vocab => @vocab}
+%ul.links
+  %li= link_to 'Back', vocabs_path, :class=>"back_link"
+  %li= link_to 'Destroy', @vocab, :confirm => 'Are you sure?', :method => :delete, :class=>"delete_link"

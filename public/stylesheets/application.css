@@ -1,0 +1,204 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1.5; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+table, td, th {
+  vertical-align: middle; }
+
+blockquote:before, blockquote:after {
+  content: ""; }
+
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: none; }
+
+li {
+  list-style: none !important; }
+
+body {
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #222;
+  background: #ddd; }
+
+#wrapper {
+  background: #fff;
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  -moz-box-shadow: 0 2px 3px #777;
+  -webkit-box-shadow: 0 2px 3px #777; }
+
+h1 {
+  font-size: 20px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px; }
+
+ul#links {
+  margin-top: 10px; }
+
+a {
+  color: #2971AE; }
+
+/* form */
+form .text_field , form .password_field {
+  margin: 10px 0; }
+form #user_submit, form #session_submit {
+  margin-left: 170px; }
+form abbr {
+  display: none; }
+form label {
+  display: block;
+  text-transform: capitalize;
+  float: left;
+  text-align: right;
+  width: 150px;
+  padding: 1px 20px 3px 0;
+  font-weight: bold; }
+form input, form textarea {
+  display: block; }
+form fieldset.buttons {
+  margin-top: 10px; }
+form fieldset.inputs li {
+  display: block;
+  clear: all;
+  padding: 10px 0;
+  border-bottom: 1px solid #ebebeb; }
+form fieldset.inputs textarea, form fieldset.inputs input, form fieldset.inputs select {
+  background: url("/images/fieldbg.gif") repeat-x scroll center top #FFFFFF;
+  border-color: #7C7C7C #C3C3C3 #DDDDDD;
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px; }
+form fieldset.inputs li.date legend.label {
+  float: left; }
+form fieldset.inputs li.date ol {
+  float: left; }
+  form fieldset.inputs li.date ol li {
+    display: inline;
+    border: none; }
+    form fieldset.inputs li.date ol li label {
+      display: none; }
+    form fieldset.inputs li.date ol li select {
+      padding: 3px; }
+form li#account_is_hidden_input {
+  border: none; }
+  form li#account_is_hidden_input input, form li#account_is_hidden_input label {
+    display: inline;
+    text-align: left; }
+  form li#account_is_hidden_input label {
+    margin-left: 170px; }
+  form li#account_is_hidden_input input {
+    margin-left: 0;
+    padding-left: 0; }
+form fieldset.buttons {
+  margin-left: 170px; }
+form .current_image {
+  margin: 10px 0 0 0; }
+  form .current_image img {
+    margin-top: 0px;
+    border: 1px solid #ccc; }
+
+/* DATA LIST */
+table.data_list {
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%; }
+  table.data_list tbody tr:hover {
+    background: #ddd; }
+  table.data_list td, table.data_list th {
+    padding: 3px 6px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-left: none; }
+  table.data_list th {
+    font-weight: bold;
+    background: #999;
+    border: 1px solid #999;
+    border-bottom: 2px solid #666;
+    border-left: none;
+    color: #fff; }
+  table.data_list td.actions {
+    width: 32px; }
+    table.data_list td.actions a {
+      display: block;
+      height: 16px;
+      width: 16px;
+      float: left; }
+  table.data_list td.preview {
+    width: 50px;
+    padding: 2px 0; }
+    table.data_list td.preview a {
+      display: block;
+      height: 16px;
+      width: 16px;
+      float: left; }
+  table.data_list td.incoming, table.data_list td.outgoing, table.data_list td.tranferring {
+    width: 16px; }
+  table.data_list td a {
+    text-transform: capitalize; }
+  table.data_list td.incoming {
+    background: #B4CF66; }
+  table.data_list td.outgoing {
+    background: #FF5A33; }
+  table.data_list td.transferring {
+    background: #FFEC5C; }
+  table.data_list td.thai {
+    font-size: 15px;
+    padding: 1px 6px; }
+
+ul.links {
+  margin-top: 20px; }
+  ul.links li {
+    display: inline; }
+
+a.add_link, a.back_link, a.edit_link, a.delete_link {
+  padding-left: 18px;
+  padding-right: 4px; }
+
+a.add_link {
+  background: url('/images/add.png') left center no-repeat; }
+
+a.back_link {
+  background: url('/images/back.png') left center no-repeat; }
+
+a.edit_link {
+  background: url('/images/edit.png') left center no-repeat; }
+
+a.delete_link {
+  background: url('/images/delete.png') left center no-repeat; }
+
+ul#nav {
+  margin-bottom: 20px;
+  text-align: right; }
+  ul#nav li {
+    display: inline;
+    padding: 3px; }

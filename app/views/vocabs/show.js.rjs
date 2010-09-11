@@ -1,0 +1,19 @@
+page.replace_html "thai", @vocab.thai
+page.show "thai"
+page.replace_html "english", @vocab.english
+page.replace_html "pronunciation", "[#{@vocab.print_pronunciation}]"
+
+if previous = Vocab.find_previous(@vocab.id).last
+  page.replace_html "left_card", (link_to_remote "previous", :url=> vocab_url(previous), :method=>"get", :loading=> "$('#left_card a').addClass('hover')")
+else
+  page.replace_html "left_card", ""
+end
+
+
+if subsequent = Vocab.find_subsequent(@vocab.id).first
+  page.replace_html "right_card", (link_to_remote "subsequent", :url=> vocab_url(subsequent), :method=>"get", :loading=> "$('#right_card a').addClass('hover')")
+else
+  page.replace_html "right_card", ""
+end
+
+page.call "update_size"

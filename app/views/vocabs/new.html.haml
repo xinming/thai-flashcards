@@ -1,0 +1,4 @@
+%h2 New vocab
+= render :partial => "form", :locals => {:vocab => @vocab}
+%ul.links
+  %li= link_to 'Back', vocabs_path, :class=> "back_link"

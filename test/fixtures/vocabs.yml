@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  thai: MyString
+  english: MyString
+  pronounciation: MyText
+  done: false
+
+two:
+  thai: MyString
+  english: MyString
+  pronounciation: MyText
+  done: false
