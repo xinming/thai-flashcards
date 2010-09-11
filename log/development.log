@@ -45307,3 +45307,690 @@ Rendering template within layouts/application
 Rendering vocabs/index
 Rendered vocabs/_vocab (29.8ms)
 Completed in 150ms (View: 140, DB: 2) | 200 OK [http://ohho.in.th/]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 14:56:11) [GET]
+  [4;36;1mVocab Load (1.1ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (13.3ms)
+Completed in 49ms (View: 41, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:03:37) [GET]
+  [4;36;1mVocab Load (1.1ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.5ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:03:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.1ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+
+ActionView::TemplateError (Inconsistent indentation: 2 tabs were used for indentation, but the rest of the document was indented using 2 spaces.) on line #13 of app/views/layouts/flashcard.html.haml:
+10:     = javascript_include_tag "jquery.hotkeys-0.7.9.min.js"
+11:     = javascript_include_tag "thai"
+12:   %body
+13: 		=link_to 'Vocabs', vocabs_path, :class=> "index_link"
+14:     =yield
+
+    app/views/layouts/flashcard.html.haml:13
+    haml (3.0.18) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.18) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.18) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.18) lib/haml/precompiler.rb:1041:in `block_opened?'
+    haml (3.0.18) lib/haml/precompiler.rb:769:in `render_tag'
+    haml (3.0.18) lib/haml/precompiler.rb:214:in `process_line'
+    haml (3.0.18) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.18) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.18) lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.18) lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.18) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.18) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/vocabs_controller.rb:58:in `show'
+    app/controllers/vocabs_controller.rb:56:in `show'
+    haml (3.0.18) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (67.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:03:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:03:53) [GET]
+  [4;36;1mVocab Load (1.0ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.0ms)
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:04:21) [GET]
+  [4;36;1mVocab Load (1.0ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.1ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:04:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.1ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 85ms (View: 79, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:04:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:05:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:05:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:05:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:05:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:07:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:08:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:08:28) [GET]
+  [4;36;1mVocab Load (1.0ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.2ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:08:44) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"2", "_"=>"1284192524180"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 2) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 2) LIMIT 1[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/vocabs/2?_=1284192524180&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:08:44) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"3", "_"=>"1284192524582"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 3) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 3) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 3) LIMIT 1[0m
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/3?_=1284192524582&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:09:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+
+ActionView::TemplateError (Inconsistent indentation: " \t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #14 of app/views/vocabs/show.html.haml:
+11:     #thai= @vocab.thai
+12:     #english= @vocab.english
+13:     #pronunciation= "[#{@vocab.print_pronunciation}]"
+14:  	#index_button  
+15: 	  =link_to 'Vocabs', vocabs_path, :class=> "back_link"
+16: %script{:type => "text/javascript"}
+17:   :plain
+
+    app/views/vocabs/show.html.haml:14
+    haml (3.0.18) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.18) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.18) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.18) lib/haml/precompiler.rb:1041:in `block_opened?'
+    haml (3.0.18) lib/haml/precompiler.rb:769:in `render_tag'
+    haml (3.0.18) lib/haml/precompiler.rb:838:in `render_div'
+    haml (3.0.18) lib/haml/precompiler.rb:213:in `process_line'
+    haml (3.0.18) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.18) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.18) lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.18) lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.18) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.18) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/vocabs_controller.rb:58:in `show'
+    app/controllers/vocabs_controller.rb:56:in `show'
+    haml (3.0.18) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (136.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:10:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+
+ActionView::TemplateError (Inconsistent indentation: " \t" was used for indentation, but the rest of the document was indented using 2 spaces.) on line #14 of app/views/vocabs/show.html.haml:
+11:     #thai= @vocab.thai
+12:     #english= @vocab.english
+13:     #pronunciation= "[#{@vocab.print_pronunciation}]"
+14:  	#index_button=link_to 'Vocabs', vocabs_path, :class=> "back_link"
+15: %script{:type => "text/javascript"}
+16:   :plain
+17:     $(document).ready(function(){
+
+    app/views/vocabs/show.html.haml:14
+    haml (3.0.18) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.18) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.18) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.18) lib/haml/precompiler.rb:1041:in `block_opened?'
+    haml (3.0.18) lib/haml/precompiler.rb:769:in `render_tag'
+    haml (3.0.18) lib/haml/precompiler.rb:838:in `render_div'
+    haml (3.0.18) lib/haml/precompiler.rb:213:in `process_line'
+    haml (3.0.18) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.18) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.18) lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.18) lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.18) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.18) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/vocabs_controller.rb:58:in `show'
+    app/controllers/vocabs_controller.rb:56:in `show'
+    haml (3.0.18) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (137.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:10:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:10:13) [GET]
+  [4;35;1mVocab Load (1.0ms)[0m   [0mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.3ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:10:18) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"2", "_"=>"1284192618041"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 2) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 2) LIMIT 1[0m
+Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/vocabs/2?_=1284192618041&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:10:18) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"3", "_"=>"1284192618505"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 3) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 3) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 3) LIMIT 1[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/3?_=1284192618505&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:11:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:11:50) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"2", "_"=>"1284192710600"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 2) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 2) LIMIT 1[0m
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/2?_=1284192710600&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:11:51) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"3", "_"=>"1284192711070"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 3) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 3) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 3) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/3?_=1284192711070&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:11:51) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"6", "_"=>"1284192711527"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 6) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 6) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 6) LIMIT 1[0m
+Completed in 77ms (View: 71, DB: 1) | 200 OK [http://localhost/vocabs/6?_=1284192711527&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:56) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"8", "_"=>"1284192776661"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 8) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 8) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 8) LIMIT 1[0m
+Completed in 31ms (View: 21, DB: 1) | 200 OK [http://localhost/vocabs/8?_=1284192776661&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:57) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"9", "_"=>"1284192777085"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 9) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 9) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 9) LIMIT 1[0m
+Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/9?_=1284192777085&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:57) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"10", "_"=>"1284192777425"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 10) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 10) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 10) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/10?_=1284192777425&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:57) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"11", "_"=>"1284192777752"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 11) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 11) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 11) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/11?_=1284192777752&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:57) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"12", "_"=>"1284192777967"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 12) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 12) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 12) LIMIT 1[0m
+Completed in 80ms (View: 75, DB: 1) | 200 OK [http://localhost/vocabs/12?_=1284192777967&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:58) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"13", "_"=>"1284192778158"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 13) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 13) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 13) LIMIT 1[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/13?_=1284192778158&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:58) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"14", "_"=>"1284192778392"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 14) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 14) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 14) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/14?_=1284192778392&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:58) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"15", "_"=>"1284192778600"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 15) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 15) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 15) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/15?_=1284192778600&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:58) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"16", "_"=>"1284192778751"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 16) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 16) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 16) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/16?_=1284192778751&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:58) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"17", "_"=>"1284192778984"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 17) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 17) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 17) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/17?_=1284192778984&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:59) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"18", "_"=>"1284192779192"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 18) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 18) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 18) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/18?_=1284192779192&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:59) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"19", "_"=>"1284192779478"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 19) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 19) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 19) LIMIT 1[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/19?_=1284192779478&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:12:59) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"18", "_"=>"1284192779872"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 18) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 18) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 18) LIMIT 1[0m
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/18?_=1284192779872&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:00) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"17", "_"=>"1284192780055"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 17) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 17) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 17) LIMIT 1[0m
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/vocabs/17?_=1284192780055&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:00) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"16", "_"=>"1284192780222"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 16) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 16) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 16) LIMIT 1[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/16?_=1284192780222&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:01) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"15", "_"=>"1284192781017"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 15) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 15) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 15) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/15?_=1284192781017&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:01) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"16", "_"=>"1284192781367"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 16) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 16) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 16) LIMIT 1[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/16?_=1284192781367&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:01) [GET]
+  Parameters: {"authenticity_token"=>"5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M=", "id"=>"17", "_"=>"1284192781632"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 17) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 17) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 17) LIMIT 1[0m
+Completed in 13ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/17?_=1284192781632&authenticity_token=5Jlj4KN3kYQqQG8JPVdlqIWdQNX2U7pelixj9i5wf6M%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.5ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 90ms (View: 9, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:13:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:14:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.4ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.6ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1) LIMIT 1[0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:14:12) [GET]
+  [4;36;1mVocab Load (64.7ms)[0m   [0;1mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (11.1ms)
+Completed in 86ms (View: 15, DB: 65) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:14:15) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 13) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 13) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 13) LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/13]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:14:16) [GET]
+  [4;35;1mVocab Load (1.0ms)[0m   [0mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.2ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:14:36) [GET]
+  [4;35;1mVocab Load (1.1ms)[0m   [0mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (14.3ms)
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:14:37) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 22) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 22) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 22) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/22]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:14:59) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 22) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 22) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 22) LIMIT 1[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/vocabs/22]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:15:15) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 22) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 22) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 22) LIMIT 1[0m
+Completed in 91ms (View: 85, DB: 1) | 200 OK [http://localhost/vocabs/22]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:15:22) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 22) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 22) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 22) LIMIT 1[0m
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://localhost/vocabs/22]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:15:34) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mVocab Load (0.4ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 22) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 22) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 22) LIMIT 1[0m
+Completed in 17ms (View: 8, DB: 1) | 200 OK [http://localhost/vocabs/22]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:15:52) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 22) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 22) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 22) LIMIT 1[0m
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/22]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:15:54) [GET]
+  [4;35;1mVocab Load (1.0ms)[0m   [0mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.1ms)
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:15:56) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 21) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 21) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 21) LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/21]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-09-11 15:16:13) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 21) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 21) ORDER BY vocabs.id DESC LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 21) LIMIT 1[0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/vocabs/21]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-09-11 15:16:15) [GET]
+  [4;35;1mVocab Load (1.0ms)[0m   [0mSELECT * FROM "vocabs" LIMIT 20 OFFSET 0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "vocabs" [0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (10.4ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/vocabs]

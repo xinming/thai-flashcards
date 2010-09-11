@@ -40,8 +40,8 @@ li {
 body {
   font-family: sans-serif;
   font-size: 13px;
-  color: #222;
-  background: #CDCDCD !important; }
+  color: #222222;
+  background: #cdcdcd !important; }
 
 #flash_card_container {
   width: 375px;
@@ -51,7 +51,7 @@ body {
     width: 258px;
     height: 390px;
     margin: 0 auto;
-    background: url('/images/flash_card.png') no-repeat; }
+    background: url("/images/flash_card.png") no-repeat; }
   #flash_card_container #left_card a, #flash_card_container #right_card a {
     text-indent: -100000px;
     display: block;
@@ -61,21 +61,21 @@ body {
     line-height: 0px;
     margin-top: 160px; }
   #flash_card_container #left_card a {
-    background: url('/images/arrows.png') no-repeat left center;
+    background: url("/images/arrows.png") no-repeat left center;
     float: left; }
   #flash_card_container #right_card a {
-    background: url('/images/arrows.png') no-repeat right center;
+    background: url("/images/arrows.png") no-repeat right center;
     float: right;
     margin-right: 2px; }
   #flash_card_container #left_card a:hover, #flash_card_container #left_card a.hover {
-    background: url('/images/arrows.png') no-repeat -98px 0; }
+    background: url("/images/arrows.png") no-repeat -98px 0; }
   #flash_card_container #right_card a:hover, #flash_card_container #right_card a.hover {
-    background: url('/images/arrows.png') no-repeat -48px 0; }
+    background: url("/images/arrows.png") no-repeat -48px 0; }
   #flash_card_container #thai {
     font-size: 60px;
     text-align: center;
     padding: 70px 0;
-    color: #666;
+    color: #666666;
     height: 90px;
     line-height: 90px; }
   #flash_card_container #english, #flash_card_container #pronunciation {
@@ -87,5 +87,13 @@ body {
     font-size: 17px;
     margin-top: 74px; }
   #flash_card_container #pronunciation {
-    color: #999;
+    color: #999999;
     font-size: 13px; }
+  #flash_card_container #index_button {
+    text-align: center; }
+    #flash_card_container #index_button a {
+      font-size: 13px;
+      font-weight: bold;
+      color: #444444; }
+    #flash_card_container #index_button a:hover {
+      color: black; }
