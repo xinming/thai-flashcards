@@ -39,7 +39,7 @@ function set_shortcuts(){
     window.location="/vocabs/new"
   });
   $(document).bind('keydown', 'e', function(){
-    window.location=window.location + "/edit"
+    window.location= $("#current_vocab_id").html()+ "/edit"
   });
   
 }

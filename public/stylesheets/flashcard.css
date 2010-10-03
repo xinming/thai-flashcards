@@ -102,3 +102,6 @@ p.hints {
   color: #999999;
   text-align: center;
   margin-top: 20px; }
+
+#current_vocab_id {
+  display: none; }
