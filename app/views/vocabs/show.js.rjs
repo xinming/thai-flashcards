@@ -16,4 +16,7 @@ else
   page.replace_html "right_card", ""
 end
 
+
+page.replace_html "current_vocab_id", @vocab.id
+  
 page.call "update_size"
