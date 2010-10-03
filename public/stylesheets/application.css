@@ -40,16 +40,16 @@ li {
 body {
   font-family: sans-serif;
   font-size: 13px;
-  color: #222;
-  background: #ddd; }
+  color: #222222;
+  background: #dddddd; }
 
 #wrapper {
-  background: #fff;
+  background: white;
   width: 600px;
   margin: 20px auto;
   padding: 20px;
-  -moz-box-shadow: 0 2px 3px #777;
-  -webkit-box-shadow: 0 2px 3px #777; }
+  -moz-box-shadow: 0 2px 3px #777777;
+  -webkit-box-shadow: 0 2px 3px #777777; }
 
 h1 {
   font-size: 20px;
@@ -59,17 +59,17 @@ h2 {
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   margin-bottom: 20px; }
 
 ul#links {
   margin-top: 10px; }
 
 a {
-  color: #2971AE; }
+  color: #2971ae; }
 
 /* form */
-form .text_field , form .password_field {
+form .text_field, form .password_field {
   margin: 10px 0; }
 form #user_submit, form #session_submit {
   margin-left: 170px; }
@@ -93,11 +93,15 @@ form fieldset.inputs li {
   padding: 10px 0;
   border-bottom: 1px solid #ebebeb; }
 form fieldset.inputs textarea, form fieldset.inputs input, form fieldset.inputs select {
-  background: url("/images/fieldbg.gif") repeat-x scroll center top #FFFFFF;
-  border-color: #7C7C7C #C3C3C3 #DDDDDD;
+  background: url("/images/fieldbg.gif") repeat-x scroll center top white;
+  border-color: #7c7c7c #c3c3c3 #dddddd;
   border-style: solid;
   border-width: 1px;
   padding: 3px; }
+form fieldset.inputs li.boolean input {
+  display: inline; }
+form fieldset.inputs li.boolean label {
+  float: none; }
 form fieldset.inputs li.date legend.label {
   float: left; }
 form fieldset.inputs li.date ol {
@@ -125,7 +129,7 @@ form .current_image {
   margin: 10px 0 0 0; }
   form .current_image img {
     margin-top: 0px;
-    border: 1px solid #ccc; }
+    border: 1px solid #cccccc; }
 
 /* DATA LIST */
 table.data_list {
@@ -133,19 +137,19 @@ table.data_list {
   border-collapse: collapse;
   width: 100%; }
   table.data_list tbody tr:hover {
-    background: #ddd; }
+    background: #dddddd; }
   table.data_list td, table.data_list th {
     padding: 3px 6px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-right: none;
     border-left: none; }
   table.data_list th {
     font-weight: bold;
-    background: #999;
-    border: 1px solid #999;
-    border-bottom: 2px solid #666;
+    background: #999999;
+    border: 1px solid #999999;
+    border-bottom: 2px solid #666666;
     border-left: none;
-    color: #fff; }
+    color: white; }
   table.data_list td.actions {
     width: 32px; }
     table.data_list td.actions a {
@@ -166,11 +170,11 @@ table.data_list {
   table.data_list td a {
     text-transform: capitalize; }
   table.data_list td.incoming {
-    background: #B4CF66; }
+    background: #b4cf66; }
   table.data_list td.outgoing {
-    background: #FF5A33; }
+    background: #ff5a33; }
   table.data_list td.transferring {
-    background: #FFEC5C; }
+    background: #ffec5c; }
   table.data_list td.thai {
     font-size: 15px;
     padding: 1px 6px; }
@@ -185,16 +189,16 @@ a.add_link, a.back_link, a.edit_link, a.delete_link {
   padding-right: 4px; }
 
 a.add_link {
-  background: url('/images/add.png') left center no-repeat; }
+  background: url("/images/add.png") left center no-repeat; }
 
 a.back_link {
-  background: url('/images/back.png') left center no-repeat; }
+  background: url("/images/back.png") left center no-repeat; }
 
 a.edit_link {
-  background: url('/images/edit.png') left center no-repeat; }
+  background: url("/images/edit.png") left center no-repeat; }
 
 a.delete_link {
-  background: url('/images/delete.png') left center no-repeat; }
+  background: url("/images/delete.png") left center no-repeat; }
 
 ul#nav {
   margin-bottom: 20px;

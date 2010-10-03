@@ -35,4 +35,11 @@ function set_shortcuts(){
   $(document).bind('keydown', 's', function(){
     $('#right_card a').click();
   });
+  $(document).bind('keydown', 'n', function(){
+    window.location="/vocabs/new"
+  });
+  $(document).bind('keydown', 'e', function(){
+    window.location=window.location + "/edit"
+  });
+  
 }
