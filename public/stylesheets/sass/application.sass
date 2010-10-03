@@ -11,9 +11,7 @@ body
   width: 600px
   margin: 20px auto
   padding: 20px
-  # -moz-border-radius: 10px
   -moz-box-shadow: 0 2px 3px #777
-  # -webkit-border-radius: 10px
   -webkit-box-shadow: 0 2px 3px #777
 h1
   font-size: 20px
@@ -62,6 +60,11 @@ form
       border-style: solid
       border-width: 1px
       padding: 3px
+    li.boolean
+      input
+        display: inline
+      label
+        float: none
     li.date
       legend.label
         float: left
@@ -103,7 +106,6 @@ table.data_list
     border: 1px solid #ddd
     border-right: none
     border-left: none
-    # text-transform: capitalize
   th
     font-weight: bold
     background: #999
@@ -160,7 +162,6 @@ a.delete_link
   
   
 ul#nav
-  # background: #444
   margin-bottom: 20px
   text-align: right
   li

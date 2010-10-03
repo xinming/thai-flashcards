@@ -97,3 +97,8 @@ body {
       color: #444444; }
     #flash_card_container #index_button a:hover {
       color: black; }
+
+p.hints {
+  color: #999999;
+  text-align: center;
+  margin-top: 20px; }

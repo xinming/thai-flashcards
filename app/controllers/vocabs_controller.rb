@@ -34,7 +34,10 @@ class VocabsController < ApplicationController
   end
 
   def index
-    @vocabs = Vocab.paginate(:page => params[:page], :per_page => VOCABS_PER_PAGE)
+    @vocabs = Vocab.paginate(:page => params[:page], 
+    :per_page => VOCABS_PER_PAGE, 
+    :order => 'created_at DESC',
+    :conditions => ['done = ?',  false])
     respond_to do |format|
       format.html
       format.xml  { render :xml => @vocabs }
