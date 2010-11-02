@@ -49759,3 +49759,267 @@ Migrating to CreateVocabs (20100412025402)
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+
+
+Processing VocabsController#new (for 127.0.0.1 at 2010-10-04 03:23:40) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'vocabs'):
+  app/controllers/vocabs_controller.rb:51:in `new'
+  app/controllers/vocabs_controller.rb:51:in `new'
+  haml (3.0.18) lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (125.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateVocabs (20100412025402)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "vocabs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "thai" varchar(255), "english" varchar(255), "pronunciation" varchar(255), "done" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100412025402')[0m
+Migrating to ClearanceCreateUsers (20100412045257)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "encrypted_password" varchar(128), "salt" varchar(128), "confirmation_token" varchar(128), "remember_token" varchar(128), "email_confirmed" boolean DEFAULT 'f' NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_users_on_id_and_confirmation_token" ON "users" ("id", "confirmation_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100412045257')[0m
+Migrating to AddDetailsToVocabs (20100919100729)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mALTER TABLE "vocabs" ADD "example" varchar(255)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100919100729')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_info('index_users_on_remember_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_info('index_users_on_id_and_confirmation_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("vocabs")[0m
+
+
+Processing VocabsController#new (for 127.0.0.1 at 2010-10-04 03:24:04) [GET]
+Rendering template within layouts/application
+Rendering vocabs/new
+Rendered vocabs/_form (21.6ms)
+Completed in 78ms (View: 72, DB: 0) | 200 OK [http://localhost/vocabs/new]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-10-04 03:33:54) [GET]
+  [4;36;1mVocab Load (0.5ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (done = 'f') ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Completed in 34ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing VocabsController#new (for 127.0.0.1 at 2010-10-04 03:33:56) [GET]
+Rendering template within layouts/application
+Rendering vocabs/new
+Rendered vocabs/_form (13.3ms)
+Completed in 29ms (View: 24, DB: 0) | 200 OK [http://localhost/vocabs/new]
+
+
+Processing VocabsController#create (for 127.0.0.1 at 2010-10-04 03:34:02) [POST]
+  Parameters: {"commit"=>"Create Vocab", "vocab"=>{"example"=>"asd ad asd", "done"=>"0", "english"=>"dasd asd asd ", "pronunciation"=>"asdas das dasd ", "thai"=>"asdasdadsasd"}, "authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw="}
+  [4;35;1mVocab Create (0.7ms)[0m   [0mINSERT INTO "vocabs" ("created_at", "example", "updated_at", "done", "english", "thai", "pronunciation") VALUES('2010-10-03 20:34:02', 'asd ad asd', '2010-10-03 20:34:02', 'f', 'dasd asd asd ', 'asdasdadsasd', 'asdas das dasd ')[0m
+Redirected to http://localhost:3000/vocabs/1
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:34:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:34:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:34:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.1ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:34:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:34:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.1ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/1]
+
+
+Processing VocabsController#edit (for 127.0.0.1 at 2010-10-04 03:35:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering vocabs/edit
+Rendered vocabs/_form (76.8ms)
+Completed in 91ms (View: 85, DB: 0) | 200 OK [http://localhost/vocabs/1/edit]
+
+
+Processing VocabsController#index (for 127.0.0.1 at 2010-10-04 03:35:36) [GET]
+  [4;35;1mVocab Load (0.5ms)[0m   [0mSELECT * FROM "vocabs" WHERE (done = 'f') ORDER BY created_at DESC LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering vocabs/index
+Rendered vocabs/_vocab (28.4ms)
+Completed in 40ms (View: 35, DB: 1) | 200 OK [http://localhost/vocabs]
+
+
+Processing VocabsController#new (for 127.0.0.1 at 2010-10-04 03:35:37) [GET]
+Rendering template within layouts/application
+Rendering vocabs/new
+Rendered vocabs/_form (11.3ms)
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/vocabs/new]
+
+
+Processing VocabsController#create (for 127.0.0.1 at 2010-10-04 03:35:41) [POST]
+  Parameters: {"commit"=>"Create Vocab", "vocab"=>{"example"=>"", "done"=>"0", "english"=>"fasdfasdf", "pronunciation"=>"sdfadsf", "thai"=>"adsfads"}, "authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw="}
+  [4;36;1mVocab Create (0.3ms)[0m   [0;1mINSERT INTO "vocabs" ("created_at", "example", "updated_at", "done", "english", "thai", "pronunciation") VALUES('2010-10-03 20:35:41', '', '2010-10-03 20:35:41', 'f', 'fasdfasdf', 'adsfads', 'sdfadsf')[0m
+Redirected to http://localhost:3000/vocabs/2
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/vocabs]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 2 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.3ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 2 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 46ms (View: 18, DB: 1) | 200 OK [http://localhost/vocabs/2]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:42) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering template within layouts/flashcard
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 2 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 2 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/vocabs/2]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:43) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"1", "_"=>"1286138143031"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/vocabs/1?_=1286138143031&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:43) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"2", "_"=>"1286138143566"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 2 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 2 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/vocabs/2?_=1286138143566&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:53) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"1", "_"=>"1286138153399"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.1ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/1?_=1286138153399&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:35:59) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"2", "_"=>"1286138159586"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 2 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 2 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/2?_=1286138159586&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:36:04) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"1", "_"=>"1286138164808"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering vocabs/show
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/1?_=1286138164808&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:36:05) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"2", "_"=>"1286138165237"}
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 2 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 2 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 77ms (View: 71, DB: 1) | 200 OK [http://localhost/vocabs/2?_=1286138165237&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#edit (for 127.0.0.1 at 2010-10-04 03:36:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering vocabs/edit
+Rendered vocabs/_form (11.0ms)
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/vocabs/2/edit]
+
+
+Processing VocabsController#show (for 127.0.0.1 at 2010-10-04 03:36:07) [GET]
+  Parameters: {"authenticity_token"=>"dfWPSUYWUJd5eLJKY9Dcs+EgpoMcwVaNh7QpqBl5SZw=", "id"=>"1", "_"=>"1286138167869"}
+  [4;36;1mVocab Load (0.3ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering vocabs/show
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE (id > 1 and done = 'f') LIMIT 1[0m
+  [4;36;1mVocab Load (0.2ms)[0m   [0;1mSELECT * FROM "vocabs" WHERE (id < 1 and done = 'f') ORDER BY vocabs.id DESC LIMIT 1[0m
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/vocabs/1?_=1286138167869&authenticity_token=dfWPSUYWUJd5eLJKY9Dcs%2BEgpoMcwVaNh7QpqBl5SZw%3D]
+
+
+Processing VocabsController#edit (for 127.0.0.1 at 2010-10-04 03:36:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mVocab Load (0.2ms)[0m   [0mSELECT * FROM "vocabs" WHERE ("vocabs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering vocabs/edit
+Rendered vocabs/_form (11.5ms)
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/vocabs/1/edit]
