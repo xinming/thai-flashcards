@@ -7,9 +7,9 @@ class VocabsController < ApplicationController
   def create
     @vocab = Vocab.new(params[:vocab])
     @vocab.thai.gsub!(" ", "")
-    @vocab.english.gsub(/^\ | $/, "")
-    @vocab.pronunciation.gsub(/^\ | $/, "")
-    @vocab.example.gsub(/^\ | $/, "")
+    @vocab.english.gsub!(/^[\ ]*|[\ ]*$/, "")
+    @vocab.pronunciation.gsub!(/^[\ ]*|[\ ]*$/, "")
+    @vocab.example.gsub!(/^[\ ]*|[\ ]*$/, "")
     
     
     respond_to do |format|
