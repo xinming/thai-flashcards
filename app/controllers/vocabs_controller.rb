@@ -10,8 +10,8 @@ class VocabsController < ApplicationController
     @vocab.english.gsub!(/^[\ ]*|[\ ]*$/, "")
     @vocab.pronunciation.gsub!(/^[\ ]*|[\ ]*$/, "")
     @vocab.example.gsub!(/^[\ ]*|[\ ]*$/, "")
-    
-    
+
+
     respond_to do |format|
       if @vocab.save
         flash[:notice] = 'Vocab was successfully created.'
@@ -65,12 +65,12 @@ class VocabsController < ApplicationController
       format.js
       format.html{ render :layout => '/layouts/flashcard' }
       format.xml  { render :xml => @vocab }
-      
+
     end
   end
-  
 
-  
+
+
   def update
     respond_to do |format|
       if @vocab.update_attributes(params[:vocab])
@@ -87,7 +87,7 @@ class VocabsController < ApplicationController
   def lookup
 
     thai = params[:thai]
-    
+
     data = Hash.new
     data["search"] = thai
     x = Net::HTTP.post_form(URI.parse('http://www.thai-language.com/dict'), data)
