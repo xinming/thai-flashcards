@@ -2,7 +2,7 @@ class VocabsController < ApplicationController
   # before_filter :authenticate
   before_filter :find_vocab
   layout "application", :except => [:ajax_show]
-  VOCABS_PER_PAGE = 20
+  VOCABS_PER_PAGE = 15
 
   def create
     @vocab = Vocab.new(params[:vocab])
@@ -39,6 +39,7 @@ class VocabsController < ApplicationController
   end
 
   def index
+    @current_page = params[:page] ? params[:page] : 1
     @vocabs = Vocab.paginate(:page => params[:page], 
     :per_page => VOCABS_PER_PAGE, 
     :order => 'created_at DESC',

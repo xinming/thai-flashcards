@@ -1,4 +1,4 @@
-%h2 Listing vocabs
+%h2 Thai Vocabulary page ##{@current_page}
 - if !@vocabs.empty?
   .vocabs
     = render :partial => "vocab", :locals => {:vocabs => @vocabs}
@@ -7,3 +7,21 @@
   %p There are no vocabs to show yet.
 %ul.links
   = link_to 'New vocab', new_vocab_path, :class=> "add_link"
+
+%script{:type => "text/javascript"}
+  :plain
+    $(document).ready(function(){
+    set_shortcuts("index");
+    });
+    var next_page = function(){
+      var next_element = $("span.current").next();
+      if(next_element.is("a")){
+        window.location = next_element.attr("href");
+      }
+    }
+    var previous_page = function(){
+      var prev_element = $("span.current").prev();
+      if(prev_element.is("a")){
+        window.location = prev_element.attr("href");
+      }
+    }

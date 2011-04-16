@@ -46,7 +46,7 @@ body {
 #wrapper {
   background: white;
   width: 800px;
-  margin: 20px auto;
+  margin: 15px auto;
   padding: 20px;
   -moz-box-shadow: 0 2px 3px #777777;
   -webkit-box-shadow: 0 2px 3px #777777; }
@@ -85,6 +85,8 @@ form label {
   font-weight: bold; }
 form input, form textarea {
   display: block; }
+form input[type=text] {
+  width: 400px; }
 form fieldset.buttons {
   margin-top: 10px; }
 form fieldset.inputs li {
@@ -137,9 +139,9 @@ table.data_list {
   border-collapse: collapse;
   width: 100%; }
   table.data_list tbody tr:hover {
-    background: #dddddd; }
+    background: #eeeeee; }
   table.data_list td, table.data_list th {
-    padding: 3px 6px;
+    padding: 6px 6px;
     border: 1px solid #dddddd;
     border-right: none;
     border-left: none; }
@@ -167,6 +169,10 @@ table.data_list {
       float: left; }
   table.data_list td.incoming, table.data_list td.outgoing, table.data_list td.tranferring {
     width: 16px; }
+  table.data_list th.th_col {
+    width: 120px; }
+  table.data_list th.ph_col {
+    width: 200px; }
   table.data_list td a {
     text-transform: capitalize; }
   table.data_list td.incoming {
@@ -206,3 +212,7 @@ ul#nav {
   ul#nav li {
     display: inline;
     padding: 3px; }
+
+div.pagination {
+  padding-top: 20px;
+  float: right; }

@@ -9,7 +9,7 @@ body
 #wrapper
   background: #fff
   width: 800px
-  margin: 20px auto
+  margin: 15px auto
   padding: 20px
   -moz-box-shadow: 0 2px 3px #777
   -webkit-box-shadow: 0 2px 3px #777
@@ -46,6 +46,8 @@ form
     font-weight: bold
   input, textarea
     display: block
+  input[type=text]
+    width: 400px
   fieldset.buttons
     margin-top: 10px
   fieldset.inputs
@@ -100,9 +102,9 @@ table.data_list
   border-collapse: collapse
   width: 100%
   tbody tr:hover
-    background: #ddd
+    background: #eee
   td, th
-    padding: 3px 6px
+    padding: 6px 6px
     border: 1px solid #ddd
     border-right: none
     border-left: none
@@ -131,6 +133,11 @@ table.data_list
       float: left
   td.incoming, td.outgoing, td.tranferring
     width: 16px
+  th.th_col
+    width: 120px
+  th.en_col
+  th.ph_col
+    width: 200px
   td a
     text-transform: capitalize
   td.incoming
@@ -167,3 +174,6 @@ ul#nav
   li
     display: inline
     padding: 3px
+div.pagination
+  padding-top: 20px
+  float: right

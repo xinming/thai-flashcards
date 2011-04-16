@@ -27,19 +27,34 @@ function _update_size(obj, length, max_length, default_size, min_size){
 }
 
 
-
-function set_shortcuts(){
-  $(document).bind('keydown', 'a', function(){
-    $('#left_card a').click();
-  });
-  $(document).bind('keydown', 's', function(){
-    $('#right_card a').click();
-  });
-  $(document).bind('keydown', 'n', function(){
-    window.location="/vocabs/new"
-  });
-  $(document).bind('keydown', 'e', function(){
-    window.location= $("#current_vocab_id").html()+ "/edit"
-  });
-  
+/* CARD PAGE */
+function set_shortcuts(page){
+	if(page == "card"){
+	  $(document).bind('keydown', 'a', function(){
+	    $('#left_card a').click();
+	  });
+	  $(document).bind('keydown', 's', function(){
+	    $('#right_card a').click();
+	  });
+	  $(document).bind('keydown', 'n', function(){
+	    window.location="/vocabs/new"
+	  });
+	  $(document).bind('keydown', 'e', function(){
+	    window.location= $("#current_vocab_id").html()+ "/edit"
+	  });
+	  $(document).bind('keydown', 'i', function(){
+	    window.location="/vocabs/"
+	  });
+	}
+	else if(page == "index"){
+	  $(document).bind('keydown', 'a', function(){
+			previous_page();
+	  });
+	  $(document).bind('keydown', 's', function(){
+	    next_page();
+	  });
+	  $(document).bind('keydown', 'n', function(){
+	    window.location="/vocabs/new"
+	  });
+	}
 }
