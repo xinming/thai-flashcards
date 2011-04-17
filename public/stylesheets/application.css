@@ -1,4 +1,5 @@
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, 
+, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -44,12 +45,18 @@ body {
   background: #dddddd; }
 
 #wrapper {
-  background: white;
+	background: #fff;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#ddd), color-stop(.97,#eee));
   width: 800px;
   margin: 15px auto;
-  padding: 20px;
+  padding: 15px;
   -moz-box-shadow: 0 2px 3px #777777;
-  -webkit-box-shadow: 0 2px 3px #777777; }
+  -webkit-box-shadow: 0 2px 3px #777777; 
+  -moz-box-shadow: 0 2px 5px #444;
+  -webkit-box-shadow: 0 2px 5px #444;
+/*  -webkit-box-shadow: 0 0px 190px #bbb inset;*/
+	-webkit-border-radius: 15px;
+}
 
 h1 {
   font-size: 20px;
@@ -60,8 +67,7 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid #cccccc;
-  margin-bottom: 20px; }
-
+}
 ul#links {
   margin-top: 10px; }
 
@@ -87,6 +93,9 @@ form input, form textarea {
   display: block; }
 form input[type=text] {
   width: 400px; }
+form fieldset{
+	border: none !important;
+}
 form fieldset.buttons {
   margin-top: 10px; }
 form fieldset.inputs li {
@@ -139,19 +148,29 @@ table.data_list {
   border-collapse: collapse;
   width: 100%; }
   table.data_list tbody tr:hover {
-    background: #eeeeee; }
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e6e6e6)) !important; /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #eee,  #e6e6e6) !important; /* for firefox 3.6+ */
+}
+	table.data_list tbody tr:hover td, table.data_list tbody tr:hover a{
+/*		color: #fff;*/
+	}
   table.data_list td, table.data_list th {
+		white-space: nowrap;
+		text-overflow: ellipsis;
     padding: 6px 6px;
-    border: 1px solid #dddddd;
+    border: 1px solid #d7d7d7;
     border-right: none;
     border-left: none; }
   table.data_list th {
     font-weight: bold;
-    background: #999999;
-    border: 1px solid #999999;
-    border-bottom: 2px solid #666666;
-    border-left: none;
+/*    background: #999999;*/
+/*    border: 1px solid #999999;*/
+/*    border-bottom: 2px solid #666666;*/
+/*    border-left: none;*/
     color: white; }
+	table.data_list  thead tr{
+		background: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#888))!important;
+	}
   table.data_list td.actions {
     width: 32px; }
     table.data_list td.actions a {
@@ -173,6 +192,8 @@ table.data_list {
     width: 120px; }
   table.data_list th.ph_col {
     width: 200px; }
+  table.data_list th.action {
+    width: 40px; }
   table.data_list td a {
     text-transform: capitalize; }
   table.data_list td.incoming {
@@ -182,11 +203,17 @@ table.data_list {
   table.data_list td.transferring {
     background: #ffec5c; }
   table.data_list td.thai {
-    font-size: 15px;
-    padding: 1px 6px; }
-
-ul.links {
-  margin-top: 20px; }
+    font-size: 17px;
+    padding: 1px 6px;
+		
+	}
+	table.data_list td.thai a{
+		text-decoration: none;
+	}
+	ul.links {
+		margin-top: 20px; 
+		padding: 0;
+	}
   ul.links li {
     display: inline; }
 
@@ -216,3 +243,35 @@ ul#nav {
 div.pagination {
   padding-top: 20px;
   float: right; }
+
+#help{
+  display: none;
+	background: none;
+	min-height: 0px !important;
+}
+.ui-dialog-titlebar-close{
+	display: none !important;
+}
+
+div.ui-dialog-titlebar{
+	background: none !important;
+	border: none !important;
+	border-bottom: 1px solid #fff !important;
+	color: rgba(255,255,255,0.9) !important;
+	border-color: rgba(255,255,255,0.4) !important;
+	font-size: 0.85em !important;
+}
+#help li{
+	background: none;
+	color: rgba(255,255,255,0.9);
+}
+.ui-dialog, .ui-widget-content {
+	background: none !important;
+	border: none !important;
+}
+
+.ui-dialog{
+	background: rgba(0,0,0,0.75) !important;
+	-webkit-border-radius: 8px !important;
+	-webkit-box-shadow: 0px 2px 6px #444;
+}

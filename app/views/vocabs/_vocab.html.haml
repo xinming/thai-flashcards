@@ -4,12 +4,16 @@
       %th.th_col Thai
       %th.en_col English
       %th.ph_col Pronounciation
-      / %th Edit
+      - if ! @done_index 
+        %th.action
   %tbody
     - vocabs.each do |vocab|
       %tr
         %td.thai=link_to vocab.thai, vocab
         %td=h vocab.english
         %td= vocab.print_pronunciation
-        / %td
-        /   = link_to edit_image, edit_vocab_path(vocab)
+        - if !@done_index 
+          %td
+            = link_to edit_image, edit_vocab_path(vocab)
+            %a{:href => "#", :onclick => "done($(this), #{vocab.id}); return false"}
+              = done_image

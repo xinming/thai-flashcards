@@ -1,1 +1,134 @@
 Stopping web server... done
+[ pid=224 thr=0x101136000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 14:41:59.741 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10079e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 14:42:05.615 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10109a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 14:42:06.298 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100666000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 14:42:07.186 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1007d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 14:42:07.866 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1006ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:41.95 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10079e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:41.763 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101032000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:41.909 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100666000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:42.599 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10126e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:45.156 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1012a2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:45.205 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1006ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:46.162 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100702000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:46.935 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10130a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:27:48.486 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10069a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:29:48.646 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100632000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:37:08.153 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100702000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:37:10.437 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101102000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:37:18.665 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1011d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:39:59.834 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10069a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:40:01.236 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100736000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:40:01.645 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100702000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:40:02.28 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101032000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:40:02.281 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1011d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:45:11.53 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10123a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:45:11.227 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1011d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:46:02.745 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1006ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:49:40.504 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10076a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:49:40.529 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10130a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:50:34.616 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1006ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:50:38.122 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1010ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:50:39.755 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10116a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:50:43.320 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10076a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:57:01.305 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101032000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:57:01.958 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100666000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 15:59:48.567 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1012a2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:02:10.41 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10076a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:03:30.367 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10130a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:03:31.883 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10123a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:03:54.681 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100666000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:03:56.804 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101136000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:03:57.749 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x100736000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:04:24.765 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10130a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:05:08.985 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10123a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:05:30.510 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101136000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:06:33.317 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=10773 thr=2148278700 file=utils.rb:176 time=2011-04-17 16:06:33.318 ]: *** Exception Errno::ENOTCONN in Passenger RequestHandler's client socket (Socket is not connected) (process 10773, thread #<Thread:0x100184358>):
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/utils/unseekable_socket.rb:101:in `write'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/utils/unseekable_socket.rb:101:in `write'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/rack/request_handler.rb:131:in `process_request'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/response.rb:156:in `each'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:16:in `send'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:16:in `__send__'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:16:in `method_missing'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:22:in `method_missing'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/rack/request_handler.rb:130:in `process_request'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_request_handler.rb:513:in `accept_and_process_next_request'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_request_handler.rb:274:in `main_loop'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/classic_rails/application_spawner.rb:321:in `start_request_handler'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `send'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/classic_rails/application_spawner.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/utils.rb:479:in `safe_fork'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/classic_rails/application_spawner.rb:270:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/helper-scripts/passenger-spawn-server:99
+[ pid=224 thr=0x100702000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:06:36.515 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x1011d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:08:32.263 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101066000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:10:33.37 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10123a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:11:27.342 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x10109a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 16:16:48.204 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101102000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 17:03:18.909 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=224 thr=0x101206000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 17:03:19.824 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=13515 thr=2148278700 file=utils.rb:176 time=2011-04-17 17:10:52.382 ]: *** Exception SignalException in PhusionPassenger::ClassicRails::ApplicationSpawner (SIGTERM) (process 13515, thread #<Thread:0x100184358>):
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:343:in `select'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:343:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:180:in `start'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/classic_rails/application_spawner.rb:149:in `start'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:219:in `spawn_rails_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server_collection.rb:132:in `lookup_or_add'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:214:in `spawn_rails_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server_collection.rb:82:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:213:in `spawn_rails_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:132:in `spawn_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/spawn_manager.rb:275:in `handle_spawn_application'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:357:in `__send__'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:357:in `server_main_loop'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/lib/phusion_passenger/abstract_server.rb:206:in `start_synchronously'
+	from /var/lib/passenger-standalone/3.0.5-universal-ruby1.8.7-x86_64-macosx-10.6/support/helper-scripts/passenger-spawn-server:99
+Stopping web server... done
+[ pid=102 thr=0x100532000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:43:01.58 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1011d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:46:04.588 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1005ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:46:05.934 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100532000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:49:49.985 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100566000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:24.71 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10059a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:24.247 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1005ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:24.260 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10066a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:25.144 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100636000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:25.171 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1006d2000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:25.697 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10073a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:53:26.92 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10059a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:54:36.418 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1005ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:54:36.418 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100602000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:54:36.466 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100636000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:55:25.818 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100706000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:56:17.241 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x101032000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:57:22.626 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100532000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:58:07.208 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10069e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:58:08.60 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1010ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 18:58:12.175 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x100636000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:33.417 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10076e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:34.184 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x1007d6000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:34.708 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x101066000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:34.776 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x101032000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:34.839 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x101102000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:35.808 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x101136000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 21:44:35.882 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=102 thr=0x10069e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-17 22:21:03.521 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.

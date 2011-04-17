@@ -13,6 +13,13 @@
     #pronunciation= "[#{@vocab.print_pronunciation}]"
   #index_button=link_to 'All Vocabs', vocabs_path
   #current_vocab_id=@vocab.id
+- content_for :help do
+  %ui
+    %li [a]: previous vocab
+    %li [s]: next vocab
+    %li [n]: create new vocab
+    %li [e]: edit current vocab
+    %li [d]: show completed vocabs
 %script{:type => "text/javascript"}
   :plain
     $(document).ready(function(){

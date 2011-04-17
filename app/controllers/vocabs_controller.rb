@@ -50,6 +50,20 @@ class VocabsController < ApplicationController
     end
   end
 
+  def done_index
+    @current_page = params[:page] ? params[:page] : 1
+    @done_index = true 
+    @vocabs = Vocab.paginate(:page => params[:page], 
+    :per_page => VOCABS_PER_PAGE, 
+    :order => 'created_at DESC',
+    :conditions => ['done = ?',  true])
+    respond_to do |format|
+      format.html { render :template => "vocabs/index.html.haml"}
+      format.xml  { render :xml => @vocabs }
+    end
+  end
+  
+  
   def edit
   end
 
@@ -84,6 +98,17 @@ class VocabsController < ApplicationController
       end
     end
   end
+
+  
+  
+  def done
+    if @vocab
+      @vocab.done = true
+      @vocab.save
+      render :text => "success"
+    end
+  end
+
 
   def lookup
 

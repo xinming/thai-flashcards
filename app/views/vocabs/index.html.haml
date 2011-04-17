@@ -1,4 +1,8 @@
-%h2 Thai Vocabulary page ##{@current_page}
+- if @done_index
+  %h2 Completed Vocabulary Page ##{@current_page}
+-else
+  %h2 Current Vocabulary Page ##{@current_page}
+
 - if !@vocabs.empty?
   .vocabs
     = render :partial => "vocab", :locals => {:vocabs => @vocabs}
@@ -8,6 +12,13 @@
 %ul.links
   = link_to 'New vocab', new_vocab_path, :class=> "add_link"
 
+- content_for :help do
+  %ui
+    %li [a]: previous page
+    %li [s]: next page
+    %li [n]: create new vocab
+    %li [i]: go back to first page
+    %li [d]: show completed vocabs
 %script{:type => "text/javascript"}
   :plain
     $(document).ready(function(){

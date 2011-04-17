@@ -2,3 +2,8 @@
   = f.inputs :thai, :english, :pronunciation, :example, :done
   - f.buttons do 
     = f.commit_button :button_html => { :value => "Submit" }
+%script{:type => "text/javascript"}
+  :plain
+    $(document).ready(function(){
+      set_shortcuts("form");
+    });
