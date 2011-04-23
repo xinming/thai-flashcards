@@ -143,3 +143,16 @@ Stopping web server... done
 [ pid=102 thr=0x10069e000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-18 18:22:13.773 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
 Stopping web server... done
 Stopping web server... done
+[ pid=114 thr=0x100532000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 15:21:09.940 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x101032000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 15:21:19.542 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x10059a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 15:22:50.142 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x100706000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 15:22:51.243 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x100602000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 15:23:03.478 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x101102000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 23:44:02.476 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x10109a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 23:47:18.670 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x10066a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 23:47:18.737 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x1010ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 23:47:19.477 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x100566000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-23 23:47:21.315 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x1005ce000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-24 01:24:10.470 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x10059a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-24 01:28:28.720 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=114 thr=0x100636000 file=ext/nginx/HelperAgent.cpp:567 time=2011-04-24 01:28:29.17 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
