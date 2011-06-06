@@ -168,3 +168,6 @@ Stopping web server... done
 Stopping web server... done
 Stopping web server... done
 Stopping web server... done
+[ pid=249 thr=0x100632000 file=ext/nginx/HelperAgent.cpp:567 time=2011-06-06 14:15:12.725 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=249 thr=0x10109a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-06-06 14:15:20.414 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
+[ pid=249 thr=0x10116a000 file=ext/nginx/HelperAgent.cpp:567 time=2011-06-06 14:15:21.137 ]: Couldn't forward the HTTP response back to the HTTP client: It seems the user clicked on the 'Stop' button in his browser.
